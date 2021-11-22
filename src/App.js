@@ -106,7 +106,6 @@ class App extends Component {
             })
             .catch(console.log);
         }
-        console.log(response);
         for (let i = 0; i < response.outputs[0].data.regions.length; i++) {
           this.displayFaceBox(this.calculateFaceLocation(response, i))
         }
@@ -145,19 +144,13 @@ class App extends Component {
               onButtonSubmit={this.onButtonSubmit}
             />
             <FaceRecognition box={box} imageUrl={imageUrl} />
-
-
-
           </div>
           : (
             route === 'signin'
               ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
               : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
           )
-
-
         }
-
 
       </div>
     );
