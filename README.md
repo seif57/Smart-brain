@@ -1,1 +1,1 @@
-# Smart-brain Will detet Faces IN Your Picture
+# Smart-brain Will detect Faces IN Your Picture
